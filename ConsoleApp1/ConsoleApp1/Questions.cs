@@ -28,7 +28,7 @@ namespace ConsoleApp1
             for (int i = 1; i < 3; i++)
             {
                 Console.Write("Enter Correct Answer : ");
-                INTinput = int.Parse(Console.ReadLine());
+                INTinput = int.Parse(Console.ReadLine()??"0");
                 if (INTinput == Result)
                 {
                     Console.WriteLine("Your Answer Is Correct ");
@@ -43,7 +43,7 @@ namespace ConsoleApp1
         public void Qestion01()
         {
             Console.Write("E01 =>>>  20 * 50 = ");
-             INTinput =int.Parse(Console.ReadLine());
+             INTinput =int.Parse(Console.ReadLine()??"0");
             if (INTinput != 1000)
             {
                 Repeat(1000);
@@ -61,7 +61,7 @@ namespace ConsoleApp1
         public void Qestion02()
         {
             Console.Write("E01 =>>>  2000 * 10  + 400 = ");
-            INTinput = int.Parse(Console.ReadLine());
+            INTinput = int.Parse(Console.ReadLine()??"0");
             if (INTinput != 20400)
             {
                 Repeat(20400);
@@ -77,7 +77,7 @@ namespace ConsoleApp1
         public void Qestion03()
         {
             Console.Write("E01 =>>>  200 * 10  + 400 = ");
-            INTinput = int.Parse(Console.ReadLine());
+            INTinput = int.Parse(Console.ReadLine()??"0");
             if (INTinput != 2400)
             {
                 Repeat(2400);
@@ -95,7 +95,7 @@ namespace ConsoleApp1
             Console.WriteLine("Choose Famouse Football Player ");
             Console.WriteLine("1 : Mohamed Ramadan\n2 : Mohamed Salah\n3 : Mohamed Helmy");
             Console.Write("Your Answer : ");
-            INTinput=int.Parse(Console.ReadLine());
+            INTinput=int.Parse(Console.ReadLine()??"0");
             if (INTinput==2)
             {
                 Console.WriteLine("Your Answer Correct");
@@ -112,7 +112,7 @@ namespace ConsoleApp1
             Console.WriteLine("            Choose");
             Console.WriteLine(".....Is The Food Of Rappit");
             Console.WriteLine("1 : Carrot. 2 : Rice. 3 : Tometo");
-            INTinput =int.Parse(Console.ReadLine());
+            INTinput =int.Parse(Console.ReadLine()??"0");
             if (INTinput==1)
             {
                 Console.WriteLine("Your Answer Is Correct");
