@@ -9,26 +9,26 @@ namespace ConsoleApp1
     internal class Player
     {
         private int Id;
-        private string Name;
+        private string? Name;
         private int Score;
-        private int i;
-        public Player[] players=new Player[5];
         public void SetName(string Name)
         {
             this.Name = Name;
         }
         public void SetId(int Id) 
         {
-            this.Id = Id; 
+            this.Id = Id;
+
         }
         public void SetScore(int Score)
         {
             this.Score = Score;
         }
-        public void SetPlayer()
+
+
+        public override string ToString()
         {
-            players[i] = this;
-            i++;
+            return $"Name : {Name} ,Id : {Id} , Score : {Score}";
         }
     }
 }
